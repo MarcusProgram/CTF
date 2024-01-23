@@ -1,0 +1,23 @@
+пораскинув мозгами я понял что если в поле дата написать
+http://5.188.119.224:7007/hash/?data=00000000
+
+то там будет такая же часть но с дополнительным куском dd4b21e9ef71e1291183a46b913ae6f2 
+ну и придется написать программу для брута
+
+import requests
+def get_data(url):
+    response = requests.get(url)
+    return response.text[96:128] # если выбрать например от 0:32 то будет только первый кусок флага
+alph = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()-=_+[]{}|;':,.<>/?`~"
+url = 'http://5.188.119.224:7007/hash/?data='
+flag = ''
+while True:
+    payload = '0' * (32-1-len(flag))
+    a = get_data(url+payload)
+    for i in alph:
+        if (get_data(url+payload+flag+i) == a):
+            flag+=i
+            print(flag)
+            break
+
+флаг не помню, а брутить окло 5-минут

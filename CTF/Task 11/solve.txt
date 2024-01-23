@@ -1,0 +1,14 @@
+тут все понятно после захода на url
+
+import requests
+url = "http://5.188.119.224:5010"
+while True:
+    res = requests.get(url)
+    if 'Go to' in res.text:
+        url += res.text.replace('Go to ', '')
+    else:
+        print(url)
+        print(res.text)
+        break
+
+shpctf{y0u_are_w3b_bruter} 
