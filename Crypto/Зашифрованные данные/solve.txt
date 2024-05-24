@@ -1,0 +1,15 @@
++VUqnRU53h/6AC2RCjjIH7tRevRzOckTtFtkkBgh3wmqXSebWT/OHuE2TpcXOJoXu1Uq1lA3sFr6HGSdFjnOWuYAZNwxKcNW+lshilk40hOpHCKSGCubWrdPLI4CP4oX6WMvkEk7iRbpWCPNJn3JJetRNM4LOI4UrkFm3kVwmh+0WCjFczE=
+шифротекст
+
+посидем и подумав, прочитав вопрос несколько раз, я понял что это прога на C++, и скорее всего тут xor, очень много програм на C++ начинаются на #include <iostream>, utf-8 у меня нмчего не получалось, так что я попробовал latin1
+
+и нашел ключ - Ú<DþyLºz
+
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    cout << "Hey, get this flag! mshp{xxx_xxx_xxx_no}" << endl;
+}

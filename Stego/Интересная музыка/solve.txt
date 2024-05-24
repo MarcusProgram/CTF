@@ -1,0 +1,4 @@
+все слишком просто, заходим банально на любой сайт который преобразует азбуку морзе в строку
+например: https://morsecode.world/international/decoder/audio-decoder-adaptive.html
+и получаем
+D O T D O T T E X T A G A I N
